@@ -14,7 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
   tf_conversions
 )
 
-find_package(Eigen REQUIRED)
+find_package(Eigen3 REQUIRED)
 find_package(PCL REQUIRED)
 
 ## System dependencies are found with CMake's conventions
