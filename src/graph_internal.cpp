@@ -35,8 +35,7 @@ bool Graph::Path(const std::string& source, const std::string& target,
   queue<string> queue;
   queue.push(source);
   while (!queue.empty()) {
-    const string& current = queue.front();
-
+    string current = queue.front();
     if (current == target) {
       string cur = target;
       path->push_back(cur);
@@ -50,6 +49,7 @@ bool Graph::Path(const std::string& source, const std::string& target,
 
     queue.pop();
     const set<string>& neighbors = adjacencies_.at(current);
+
     for (set<string>::iterator it = neighbors.begin(); it != neighbors.end();
          ++it) {
       string neighbor(it->data());

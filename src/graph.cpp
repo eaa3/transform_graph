@@ -53,7 +53,7 @@ bool Graph::ComputeDescription(const LocalFrame& local_frame,
   }
   *transform = result;
 
-  return true;
+  return true;  
 }
 
 bool Graph::ComputeMapping(const From& from, const To& to,
